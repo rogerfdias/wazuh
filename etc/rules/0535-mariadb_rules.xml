@@ -31,4 +31,12 @@ ID: 87600-87700
     <field name="mariadb.type">[NOTE]</field>
     <description>MariaDB log message</description>
   </rule>
+    
+  
+  <rule id="88104" level="7">
+    <if_sid>88100</if_sid>
+    <field name="mariadb.operation">CONNECT</field>
+    <description>User Connected to DB</description>
+    <group>pci_dss_10.2.1,</group>
+  </rule>
 </group>
